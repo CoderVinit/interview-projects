@@ -110,28 +110,27 @@ nav a {
 
 /* section 2 */
 
-.section-2{
+.section-2 {
   display: flex;
   padding: 2rem 8rem;
   align-items: center;
   /* gap: 10px; */
   justify-content: space-between;
-
 }
 
-.section-2 img{
+.section-2 img {
   height: 30px;
   object-fit: contain;
 }
 
 /* cards */
 
-.vpn-container{
+.vpn-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom:10px ;
+  margin-bottom: 10px;
 }
 
 .vpn-card {
@@ -147,14 +146,13 @@ nav a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.more{
+.more {
   border: 1px solid rgb(235, 232, 232);
-  border-bottom-left-radius:5px;
-  border-bottom-right-radius:5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-
-.vpn-car-header{
+.vpn-car-header {
   display: grid;
   width: 80%;
   padding: 10px 80px;
@@ -162,10 +160,9 @@ nav a {
   border: 1px solid black;
   border-radius: 10px 10px 0 0;
   background-color: #000;
-
 }
 
-.vpn-car-header h4{
+.vpn-car-header h4 {
   color: #fff;
 }
 
@@ -285,7 +282,7 @@ nav a {
   display: inline-block;
 }
 
-.last-section{
+.last-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -296,3 +293,94 @@ nav a {
   font-size: 13px;
   text-decoration: none;
 }
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+
+#popup img{
+  height: 25rem;
+  object-fit: cover;
+}
+
+#popup h2{
+  font-size:3.5rem ;
+}
+
+#popup .content{
+  font-size: 3.5rem;
+  text-align: start;
+  opacity: 0.8;
+  gap: 4px;
+}
+
+#popup p{
+   text-align: start;
+   margin-top: 10px;
+}
+
+#popupHeader {
+  background: #f44336;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+}
+
+#popupContent {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px;
+}
+
+
+.closeBtn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.dealBtn {
+  background-color: #2a2aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 3px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+/* popup */
